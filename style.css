@@ -153,7 +153,7 @@ header div.main-header div.img-prato img:last-child {
 
 main {}
 
-main h1 {
+main h2 {
 
     font-size: 2.8rem;
     font-family: 'Playfair Display';
@@ -162,6 +162,14 @@ main h1 {
     margin: 45.5px auto auto auto;
 
 }
+
+main h2.h2-bigger{
+    width: 100%;
+    margin-top: 84px;
+}
+
+
+/* Main receitas */
 
 
 main div.receitas {
@@ -176,4 +184,84 @@ main div.receitas div.textos p span img {
 
 main div.receitas div.textos p span :is(img:nth-child(1), img:nth-child(2)) {
     opacity: 1;
+}
+
+main img.linha {
+    width: 79.5px;
+    margin-top: 89.5px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/* Main mundo gastronômico */
+
+main div.mundo-gastronomico {
+    margin: 54.5px 0px 167.5px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+main div.mundo-gastronomico div.options div.option {
+    display: flex;
+    align-items: center;
+}
+
+main div.mundo-gastronomico div.options div.option img {
+    width: 3.11rem;
+}
+
+main div.mundo-gastronomico div.options div.option p {
+    font-size: 1.6rem;
+    font-family: 'Playfair Display', serif;
+    color: #a19b9b;
+    margin-left: 1.64rem;
+}
+
+
+/* Footer */
+
+footer {}
+
+footer img.footer-background {
+    width: 100vw;
+    position: absolute;
+}
+
+footer div.footer {
+    width: 800px;
+    margin: auto;
+    position: relative;
+    top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer div.footer div.header-footer {
+    display: flex;
+    align-items: baseline;
+}
+
+footer div.footer div.header-footer :is(h1, h1 span) {
+    font-size: 3rem;
+    font-family: 'Playfair Display', serif;
+}
+
+
+footer div.footer h1 span {
+    color: var(--lipstick-color);
+    margin-right: 2.06rem;
+}
+
+
+footer div.footer div.redes-sociais img {
+    width: 2rem;
+    margin-right: 1.75rem;
+    cursor: pointer;
+}
+
+footer div.footer div.redes-sociais img:last-child {
+    margin-right: 0;
 }
