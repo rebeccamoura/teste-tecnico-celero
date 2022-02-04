@@ -1,0 +1,179 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+:root {
+    --pink-color: #ffdbbc;
+    --lipstick-color: #e82147;
+}
+
+
+/* Header */
+
+header {
+    background-color: var(--pink-color);
+    height: 70vh;
+    width: 100vw;
+    padding-top: 24px;
+}
+
+.container {
+    width: 1000px;
+    margin: auto;
+}
+
+
+/* Nav - Header */
+
+nav {
+    width: 1000px;
+    margin: auto;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+}
+
+nav ul li a span {
+    color: var(--lipstick-color);
+    font-family: 'Playfair Display', serif;
+}
+
+nav ul li div {
+    background-color: var(--lipstick-color);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16);
+}
+
+nav ul li div img {
+    height: 40.6px;
+    
+}
+
+nav ul li p {
+    color: var(--lipstick-color);
+    font-size: 1.6rem;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    display: flex;
+    align-items: center;
+}
+
+/* Main - Header */
+
+header div.main-header {
+    display: flex;
+    justify-content: center;
+    margin-top: 78px;
+}
+
+/* Main - Header - Div.texto */
+
+header div.main-header :is(h1, div.textos h1 span) {
+    font-size: 3rem;
+    font-family: 'Playfair Display', serif;
+}
+
+header div.main-header div.textos h1 span {
+    display: block;
+    color: var(--lipstick-color);
+}
+
+header div.main-header div.textos p {
+    font-size: 1.2rem;
+    margin: 42px 147.9px 26.6px 0px;
+    line-height: 1.33;
+}
+
+header div.main-header div.textos p span {
+    display: block;
+}
+
+header div.main-header div.textos p span:last-child {
+    color: var(--lipstick-color);
+}
+
+/* Main - Header - Div.img-prato */
+
+
+header div.main-header div.img-prato img:first-child {
+    position: absolute;
+    margin: 13.9px 34.5px 26.6px 42.6px;
+}
+
+header div.main-header div.img-prato img:last-child {
+    width: 302.1px;
+}
+
+
+
+
+/* Main */
+
+main {}
+
+main h1 {
+
+    font-size: 2.8rem;
+    font-family: 'Playfair Display';
+    width: 272px;
+    text-align: center;
+    margin: 45.5px auto auto auto;
+
+}
+
+
+main div.receitas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 69.5px;
+}
+main div.receitas div.textos p span img {
+    opacity: .1;
+}
+
+main div.receitas div.textos p span :is(img:nth-child(1), img:nth-child(2)) {
+    opacity: 1;
+}
