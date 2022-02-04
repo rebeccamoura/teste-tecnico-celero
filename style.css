@@ -203,9 +203,25 @@ main div.mundo-gastronomico {
     justify-content: center;
 }
 
+main div.mundo-gastronomico div.options {
+    margin-right: 10px;
+}
+
 main div.mundo-gastronomico div.options div.option {
     display: flex;
     align-items: center;
+    border: 0.5px solid #f0f0f0;
+    padding: 16.5px 70px 16.9px 46.5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+main div.mundo-gastronomico div.options div.option:last-child {
+    margin-bottom: 0;
+}
+
+.patisserie img {
+    height: 30.4px;
 }
 
 main div.mundo-gastronomico div.options div.option img {
