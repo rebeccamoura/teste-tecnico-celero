@@ -72,7 +72,7 @@ nav ul li a span {
     font-family: 'Playfair Display', serif;
 }
 
-nav ul li div {
+nav ul li div.avatar-container {
     background-color: var(--lipstick-color);
     width: 60px;
     height: 60px;
@@ -84,7 +84,7 @@ nav ul li div {
     box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16);
 }
 
-nav ul li div img {
+nav ul li div.avatar-container img {
     height: 40.6px;
     
 }
@@ -98,6 +98,27 @@ nav ul li p {
 nav ul li:last-child {
     display: flex;
     align-items: center;
+}
+
+nav ul li div.input-container input {
+    font-size: 1.4rem;
+    /*padding: 9px 22.6px 9.2px 20px;*/
+    padding: 10px 22px;
+    width: 400px;
+    border-radius: 16.5px;
+    box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16);
+}
+
+nav ul li div.input-container input::placeholder {
+    opacity: 0.18;
+}
+
+nav ul li div.input-container img {
+    width: 16px;
+    height: 30px;
+    position: relative;
+    right: 37px;
+    top: 10px;
 }
 
 /* Main - Header */
