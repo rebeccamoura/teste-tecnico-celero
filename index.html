@@ -27,10 +27,10 @@
                         </div>
                     </li>
 
-                    <li>
+                    <li id="perfil">
                         <p>Marina</p>
                         <div class="avatar-container">
-                            <img src="assets/avatar_feminino.svg" alt="Ícone avatar feminino">
+                            <img data-key="sidebar" src="assets/avatar_feminino.svg" alt="Ícone avatar feminino">
                         </div>
                     </li>
 
@@ -52,7 +52,7 @@
 
                 <div class="img-prato">
 
-                    <img src="assets/img-prato-ceviche.png" alt="Prato de ceviche">
+                    <img data-key="hover-first-plate" src="assets/img-prato-ceviche.png" alt="Prato de ceviche">
 
                     <div class="hover d-none" id="hover-first-plate">
                         <img src="assets/seta_direita.svg" alt="Seta para o lado direito">
@@ -72,9 +72,9 @@
 
             <div class="receitas">
                 <div id="prato-receita">
-                    <img src="assets/img-prato-sanduiche.png" alt="Prato de sanduíche de tomate com salada de ovos">
+                    <img data-key="hover-receitas" src="assets/img-prato-sanduiche.png" alt="Prato de sanduíche de tomate com salada de ovos">
 
-                    <div class="hover d-none">
+                    <div id="hover-receitas" class="hover d-none">
                         <img src="assets/seta_direita.svg" alt="Seta para o lado direito">
                         <p>Ver receita</p>
 
@@ -135,29 +135,35 @@
             </div>
 
 
-            <footer>
-                <img class="footer-background" src="assets/footer.svg" alt="">
-
-                <div class="footer">
-
-                    <div class="header-footer">
-                        <h1>Cook<span>fy</span>
-                        </h1>
-                        <p>© 2020 Cookfy.</p>
-                    </div>
-
-                    <div class="redes-sociais">
-                        <img src="assets/icone-fb.svg" alt="Ícone do Facebook">
-                        <img src="assets/icone-ig.svg" alt="Ícone do Instagram">
-                        <img src="assets/icone-tt.svg" alt="Ícone do Twitter">
-                        <img src="assets/icone-in.svg" alt="Ícone do LinkedIn">
-                        <img src="assets/icone-pin.svg" alt="Ícone do Pinterest">
-                    </div>
-
+            <div id="sidebar" class="sidebar d-none">
+                <div class="content">
+                    <img data-key="sidebar" src="assets/fechar.svg" alt="Ícone para fechar aba" class="fechar">
                 </div>
-            </footer>
+            </div>
 
         </main>
+
+        <footer>
+            <img class="footer-background" src="assets/footer.svg" alt="">
+
+            <div class="footer">
+
+                <div class="header-footer">
+                    <h1>Cook<span>fy</span>
+                    </h1>
+                    <p>© 2020 Cookfy.</p>
+                </div>
+
+                <div class="redes-sociais">
+                    <img src="assets/icone-fb.svg" alt="Ícone do Facebook">
+                    <img src="assets/icone-ig.svg" alt="Ícone do Instagram">
+                    <img src="assets/icone-tt.svg" alt="Ícone do Twitter">
+                    <img src="assets/icone-in.svg" alt="Ícone do LinkedIn">
+                    <img src="assets/icone-pin.svg" alt="Ícone do Pinterest">
+                </div>
+
+            </div>
+        </footer>
 
     </div>
 

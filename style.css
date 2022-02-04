@@ -412,3 +412,34 @@ footer div.footer div.redes-sociais img {
 footer div.footer div.redes-sociais img:last-child {
     margin-right: 0;
 }
+
+
+
+/* Sidebar */
+
+
+.d-none {
+    display: none;
+}
+
+main div.sidebar {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: #7c7878af;
+}
+
+main div.sidebar div.content {
+    width: 381px;
+    height: 100vh;
+    background-color: #fff;
+    position: fixed;
+    right: 0;
+}
+
+main div.sidebar div.content img.fechar {
+    cursor: pointer;
+}
