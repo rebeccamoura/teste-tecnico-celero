@@ -157,6 +157,10 @@ header div.main-header div.textos p span:last-child {
 
 /* Main - Header - Div.img-prato */
 
+header div.main-header div.img-prato {
+    cursor: pointer;
+}
+
 
 header div.main-header div.img-prato img:first-child {
     position: absolute;
@@ -165,6 +169,31 @@ header div.main-header div.img-prato img:first-child {
 
 header div.main-header div.img-prato img:last-child {
     width: 302.1px;
+}
+
+header div.main-header div.img-prato div.hover {
+    position: absolute;
+    width: 226px;
+    height: 41.5px;
+    top: 314px;
+    right: 335px;
+    background-color: #fff;
+    display: flex;
+    cursor: pointer;
+}
+
+header div.main-header div.img-prato div.d-none {
+    display: none;
+}
+
+header div.main-header div.img-prato div.hover img {
+    width: 8px;
+    margin: 17px 0px 0px 14.5px;
+}
+
+header div.main-header div.img-prato div.hover p {
+    color: var(--lipstick-color);
+    margin: 14px 0px 0px 32.5px;
 }
 
 
@@ -198,6 +227,34 @@ main div.receitas {
     justify-content: center;
     align-items: center;
     margin-top: 69.5px;
+}
+
+main div.receitas div#prato-receita {
+    cursor: pointer;
+}
+
+main div.receitas div#prato-receita div.hover {
+    width: 319px;
+    height: 41.5px;
+    background-color: white;
+    position: absolute;
+    top: 773px;
+    left: 376.5px;
+    display: flex;
+}
+
+main div.receitas div#prato-receita div.hover img {
+    width: 8px;
+    margin:0px 0px 0px 14.5px;
+}
+
+main div.receitas div#prato-receita div.hover p {
+    color: var(--lipstick-color);
+    margin: 15px 0px 0px 10px;
+}
+
+main div.receitas div#prato-receita div.d-none {
+    display: none;
 }
 
 main div.receitas div.textos {}
