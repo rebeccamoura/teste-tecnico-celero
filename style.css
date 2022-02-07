@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto&display=swap');
 
 
 
@@ -422,7 +422,7 @@ footer div.footer div.redes-sociais img:last-child {
     display: none;
 }
 
-main div.sidebar {
+main div.sidebar, header div.ceviche-expandido {
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -442,4 +442,102 @@ main div.sidebar div.content {
 
 main div.sidebar div.content img.fechar {
     cursor: pointer;
+}
+
+
+/* Ceviche expandido */
+
+header div.ceviche-expandido div.content {
+    width: 732px;
+    height: 332.5px;
+    background-color: #797979da;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header div.ceviche-expandido div.content img {}
+
+header div.ceviche-expandido div.content div.textos {
+    width: 270px;
+    height: 317px;
+    background-color: #fff;
+    margin-left: -1px;
+    box-sizing: border-box;
+    padding: 20px;
+    display: grid;
+}
+
+header div.ceviche-expandido div.content div.textos img.fechar {
+    width: 15.6px;
+    justify-self: right;
+    cursor: pointer;
+}
+
+header div.ceviche-expandido div.content div.textos h1 {
+    font-size: 1.2rem;
+    line-height: 1.33;
+}
+
+header div.ceviche-expandido div.content div.textos h1 span {
+    color: var(--lipstick-color);
+    display: block;
+}
+
+header div.ceviche-expandido div.content div.textos p {
+    font-weight: normal;
+    color: #555455;
+}
+
+header div.ceviche-expandido div.content div.textos :is(div.actions, div.actions button, div.actions div) {
+    display: flex;
+    align-items: center;
+}
+
+header div.ceviche-expandido div.content div.textos div.actions :is(div.btn, div.ver-receita) {
+    cursor: pointer;
+}
+
+header div.ceviche-expandido div.content div.textos div.actions div.ver-receita:hover {
+    text-decoration: underline;
+    color: var(--lipstick-color);
+}
+
+header div.ceviche-expandido div.content div.textos div.actions div.btn {
+    border: 0.5px solid var(--lipstick-color);
+    height: 15px;
+    padding: 2.5px 11.5px 3px 8.8px;
+    border-radius: 19px;
+    margin-right: 21.5px;
+}
+
+/*header div.ceviche-expandido div.content div.textos div.actions div.btn {
+    background-color: #fff;
+    border: solid 0.5px var(--lipstick-color);
+    height: 15px;
+    padding: 10px;
+
+}
+
+header div.ceviche-expandido div.content div.textos div.actions button p {
+    margin: 0px 0px 0px 5.5px;
+}
+
+header div.ceviche-expandido div.content div.textos div.actions button img {
+    width: 8px;
+    margin-top: 2px;
+}*/
+
+header div.ceviche-expandido div.content div.textos div.actions div img {
+    width: 8px;
+    margin-right: 5.5px;
+}
+
+header div.ceviche-expandido div.content div.textos div.actions :is(div.ver-receita p, div.btn p) {
+    color: var(--lipstick-color);
+    font-weight: bold;
 }
