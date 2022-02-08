@@ -351,6 +351,23 @@ main div.mundo-gastronomico div.options div.option:last-child {
     margin-bottom: 0;
 }
 
+main div.mundo-gastronomico div.options div.option.active {
+    box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.16);
+}
+
+main div.mundo-gastronomico div.options div.option.active p {
+    color: var(--lipstick-color);
+}
+
+main div.mundo-gastronomico div.options div.option:hover {
+    box-sizing: border-box;
+    border: 0.5px solid var(--lipstick-color);
+}
+
+main div.mundo-gastronomico div.options div.option:hover p {
+    color: var(--lipstick-color);
+}
+
 .patisserie img {
     height: 30.4px;
 }
@@ -438,14 +455,145 @@ main div.sidebar div.content {
     background-color: #fff;
     position: fixed;
     right: 0;
+    box-sizing: border-box;
+    padding: 48.5px 61px;
 }
 
-main div.sidebar div.content img.fechar {
+main div.sidebar div.content div.btn-fechar {
+    display: flex;
+    align-items: center;
+}
+
+main div.sidebar div.content div.btn-fechar img.fechar {
+    cursor: pointer;
+    width: 15.6px;
+    margin-right: 11.5px;
+}
+
+main div.sidebar div.content div.btn-fechar p.fechar {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+main div.sidebar div.content div.profile {
+    margin-top: 44px;
+}
+
+main div.sidebar div.content div.profile div.data-profile {
+    display: flex;
+}
+
+main div.sidebar div.content div.profile div.nome {
+    display: flex;
+    align-items: center;
+}
+
+main div.sidebar div.content div.profile div.nome div.avatar-container {
+    width: 60px;
+    height: 60px;
+    background-color: var(--lipstick-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16);
+    margin-right: 9.5px;
+}
+
+main div.sidebar div.content div.profile div.nome div.avatar-container img {
+    height: 40.6px;
+}
+
+main div.sidebar div.content div.profile div.nome p {
+    color: var(--lipstick-color);
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+}
+
+main div.sidebar div.content div.profile div.email {
+    margin-top: 13.5px;
+}
+
+main div.sidebar div.content div.profile div.telefone {
+    margin-top: 8.5px;
+}
+
+main div.sidebar div.content div.profile :is(div.email img, div.telefone img) {
+    width: 14px;
+}
+
+main div.sidebar div.content div.profile :is(div.email p, div.telefone p) {
+    margin-left: 9px;
+    font-weight: bold;
+}
+
+
+main div.sidebar div.content div.plano-mensal {
+    margin-top: 30.5px;
+}
+
+main div.sidebar div.content div.plano-mensal p {
+    display: inline-block;
+}
+
+main div.sidebar div.content div.plano-mensal p.titulo {
+    font-size: 1.6rem;
+    margin-right: 54px;
+    font-family: 'Playfair Display', serif;
+}
+
+main div.sidebar div.content div.plano-mensal p {
+    font-weight: bold;
+}
+
+main div.sidebar div.content div.barra-plano-mensal {
+    margin-top: 9px;
+    width: 231.5px;
+    height: 9px;
+    background-color: var(--lipstick-color);
+    border-radius: 12px;
+}
+
+main div.sidebar div.content div.plano-mensal button {
+    margin-top: 44px;
+    font-size: 1.2rem;
+    font-family: 'Playfair Display', serif;
+    color: white;
+    background-color: var(--lipstick-color);
+    width: 231.5px;
+    padding: 9.5px 61px;
+    border-radius: 17.5px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+main div.sidebar div.content nav.menu-sidebar {}
+
+main div.sidebar div.content nav.menu-sidebar ul {
+    display: block;
+}
+
+main div.sidebar div.content nav.menu-sidebar ul li {
+    display: flex;
+    margin-top: 11.5px;
     cursor: pointer;
 }
 
+main div.sidebar div.content nav.menu-sidebar ul li:first-child {
+    margin-top: 104.5px;
+}
 
-/* Ceviche expandido */
+main div.sidebar div.content nav.menu-sidebar ul li p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #c1bebe;
+    margin-left: 7.5px;
+}
+
+
+
+
+/* Lightbox */
 
 header div.ceviche-expandido div.content {
     width: 732px;
@@ -514,23 +662,6 @@ header div.ceviche-expandido div.content div.textos div.actions div.btn {
     border-radius: 19px;
     margin-right: 21.5px;
 }
-
-/*header div.ceviche-expandido div.content div.textos div.actions div.btn {
-    background-color: #fff;
-    border: solid 0.5px var(--lipstick-color);
-    height: 15px;
-    padding: 10px;
-
-}
-
-header div.ceviche-expandido div.content div.textos div.actions button p {
-    margin: 0px 0px 0px 5.5px;
-}
-
-header div.ceviche-expandido div.content div.textos div.actions button img {
-    width: 8px;
-    margin-top: 2px;
-}*/
 
 header div.ceviche-expandido div.content div.textos div.actions div img {
     width: 8px;

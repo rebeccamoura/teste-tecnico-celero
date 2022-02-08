@@ -65,7 +65,7 @@
             </div>
 
 
-            <div id="ceviche-expandido" class="ceviche-expandido">
+            <div id="ceviche-expandido" class="ceviche-expandido d-none">
                 <div class="content">
 
                     <img src="assets/img-prato-ceviche-expandido.png" alt="Prato de ceviche">
@@ -144,17 +144,17 @@
 
                 <div class="options">
 
-                    <div class="option cozinha">
+                    <div id="seis" class="option cozinha active">
                         <img src="assets/icone-cozinha.svg" alt="Ícone cozinha">
                         <p>Cozinha</p>
                     </div>
 
-                    <div class="option patisserie">
+                    <div id="sete" class="option patisserie">
                         <img src="assets/icone-patisserie.svg" alt="Ícone patisserie">
                         <p>Patisserie</p>
                     </div>
 
-                    <div class="option drinks">
+                    <div id="oito" class="option drinks">
                         <img src="assets/icone-drinks.svg" alt="Ícone drinks">
                         <p>Drinks</p>
                     </div>
@@ -167,7 +167,60 @@
 
             <div id="sidebar" class="sidebar d-none">
                 <div class="content">
-                    <img data-key="sidebar" src="assets/fechar.svg" alt="Ícone para fechar aba" class="fechar">
+                    <div class="btn-fechar">
+                        <img data-key="sidebar" src="assets/fechar.svg" alt="Ícone para fechar aba" class="fechar">
+                        <p class="fechar" data-key="sidebar">Fechar</p>
+                    </div>
+
+                    <div class="profile">
+
+                        <div class="data-profile nome">
+                            <div class="avatar-container">
+                                <img src="assets/avatar_feminino.svg" alt="Ícone avatar feminino">
+                            </div>
+                            <p>Ethan Gomez</p>
+                        </div>
+
+                        <div class="data-profile email">
+                            <img src="assets/email.svg" alt="Ícone de e-mail">
+                            <p>ethangomez@example.com</p>
+                        </div>
+
+                        <div class="data-profile telefone">
+                            <img src="assets/telefone.svg" alt="Ícone de telefone">
+                            <p>(951) 117 3747</p>
+                        </div>
+
+                    </div>
+
+                    <div class="plano-mensal">
+
+                        <p class="titulo">Plano mensal</p>
+                        <p class="dias-restantes">16 dias restantes</p>
+
+                        <div class="barra-plano-mensal"></div>
+
+                        <button>Assinar plano anual</button>
+
+                    </div>
+
+                    <nav class="menu-sidebar">
+                        <ul>
+                            <li>
+                                <img src="assets/bug.svg" alt="Ícone de bug">
+                                <p>Reportar bug ou abuso</p>
+                            </li>
+                            <li>
+                                <img src="assets/senha.svg" alt="Ícone de cadeado">
+                                <p>Alterar senha</p>
+                            </li>
+                            <li>
+                                <img src="assets/sair.svg" alt="Ícone de saída">
+                                <p>Sair</p>
+                            </li>
+                        </ul>
+                    </nav>
+
                 </div>
             </div>
 
@@ -185,11 +238,11 @@
                 </div>
 
                 <div class="redes-sociais">
-                    <img src="assets/icone-fb.svg" alt="Ícone do Facebook">
-                    <img src="assets/icone-ig.svg" alt="Ícone do Instagram">
-                    <img src="assets/icone-tt.svg" alt="Ícone do Twitter">
-                    <img src="assets/icone-in.svg" alt="Ícone do LinkedIn">
-                    <img src="assets/icone-pin.svg" alt="Ícone do Pinterest">
+                    <img id="1" src="assets/icone-fb.svg" alt="Ícone do Facebook">
+                    <img id="2" src="assets/icone-ig.svg" alt="Ícone do Instagram">
+                    <img id="3" src="assets/icone-tt.svg" alt="Ícone do Twitter">
+                    <img id="4" src="assets/icone-in.svg" alt="Ícone do LinkedIn">
+                    <img id="5" src="assets/icone-pin.svg" alt="Ícone do Pinterest">
                 </div>
 
             </div>
