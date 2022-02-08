@@ -21,20 +21,7 @@ function expandirPrato(event) {
 
 function ativarIcone(event) {
 
-    switch(event.target.id) {
-        case '':
-            switch(event.target.parentElement.id) {
-                case 'seis':
-                    q('#seis img').setAttribute('src', 'assets/icone-cozinha-active.svg')
-                    break
-                case 'sete':
-                    q('#sete img').setAttribute('src', 'assets/icone-patisserie-active.svg')
-                    break
-                case 'oito':
-                    q('#oito img').setAttribute('src', 'assets/icone-drinks-active.svg')
-                    break
-            }
-            break
+    switch(event.target.classList[0]) {
         case '1':
             event.target.setAttribute('src', 'assets/icone-fb-active.svg')
             break
@@ -51,22 +38,20 @@ function ativarIcone(event) {
             event.target.setAttribute('src', 'assets/icone-pin-active.svg')
             break
         case 'seis':
-            q('#seis img').setAttribute('src', 'assets/icone-cozinha-active.svg')
+            q('.seis img').setAttribute('src', 'assets/icone-cozinha-active.svg')
             break
         case 'sete':
-            q('#sete img').setAttribute('src', 'assets/icone-patisserie-active.svg')
+            q('.sete img').setAttribute('src', 'assets/icone-patisserie-active.svg')
             break
         case 'oito':
-            q('#oito img').setAttribute('src', 'assets/icone-drinks-active.svg')
+            q('.oito img').setAttribute('src', 'assets/icone-drinks-active.svg')
             break
     }
 }
 
 function desativarIcone(event) {
 
-    // se tiver com a classe active, essa função não funciona
-
-    switch(event.target.id) {
+    switch(event.target.classList[0]) {
         case '1':
             event.target.setAttribute('src', 'assets/icone-fb.svg')
             break
@@ -82,23 +67,46 @@ function desativarIcone(event) {
         case '5':
             event.target.setAttribute('src', 'assets/icone-pin.svg')
             break
+
         case 'seis':
-            q('#seis img').setAttribute('src', 'assets/icone-cozinha.svg')
-            break
         case 'sete':
-            q('#sete img').setAttribute('src', 'assets/icone-patisserie.svg')
-            break
         case 'oito':
-            q('#oito img').setAttribute('src', 'assets/icone-drinks.svg')
+
+            if (!q(`div.option.${event.target.classList[0]}.active`)) {
+
+                switch(event.target.classList[0]) {
+                    case 'seis':
+                        q('.seis img').setAttribute('src', 'assets/icone-cozinha.svg')
+                        break
+                    case 'sete':
+                        q('.sete img').setAttribute('src', 'assets/icone-patisserie.svg')
+                        break
+                    case 'oito':
+                        q('.oito img').setAttribute('src', 'assets/icone-drinks.svg')
+                        break
+                }
+
+            }
             break
     }
+
+    // se tiver com a classe active, essa função não funciona
+
 }
 
-function ativarDiv(event) {    
+function ativarDiv(event) {   
+    
+    let urlImagem = q('.active img').getAttribute('src')
+    urlImagem = urlImagem.replace('-active', '')
+
+    q('.active img').setAttribute('src', urlImagem)
     q('.active').classList.remove('active')
+
     if (event.target.id) {
         event.target.classList.add('active')
     } else {
         event.target.parentElement.classList.add('active')
     }
+
+    ativarIcone(event)
 }

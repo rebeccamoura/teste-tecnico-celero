@@ -27,3 +27,5 @@ qAll('main div.mundo-gastronomico div.options div.option').forEach(div => div.ad
 
 qAll('div.option').forEach(div => div.addEventListener('click', ativarDiv))
 
+q('div.option img').setAttribute('src', 'assets/icone-cozinha-active.svg')
+
