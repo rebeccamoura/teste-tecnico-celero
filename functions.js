@@ -2,13 +2,15 @@ const q = (element) => document.querySelector(element)
 const qAll = (element) => document.querySelectorAll(element)
 let contador = 0;
 const receitas = [
-    {
+    {   
+        url: 'assets/img-prato-sanduiche.png' ,
         adicionado: 'Adicionado ontem',
         nome: 'Sanduíche de tomate com salada de ovos',
         dificuldade: 'Fácil',
         estrelas: 2
     },
     {
+        url: 'assets/img-prato-iogurte.png',
         adicionado: 'Adicionado há 2 dias',
         nome: 'Iogurte de fruta crocante',
         dificuldade: 'Difícil',
@@ -44,9 +46,18 @@ function trocarReceita(event) {
 }
 
 function mostrarReceita() {
+
+    q('div.receitas div#prato-receita img').setAttribute('src', receitas[contador].url)
     q('div.receitas div.textos p.data-add').innerHTML = receitas[contador].adicionado
     q('div.receitas div.textos h3.nome').innerHTML = receitas[contador].nome
     q('div.receitas div.textos p.diff').innerHTML = receitas[contador].dificuldade
+
+    for (let i = 1; i <= receitas[contador].estrelas; i++) {
+
+        q(`div.estrelas-container div.estrelas img:nth-child(${i})`).style.opacity = '1'
+    
+    }
+
 }
 
 function removerDNone(event) {

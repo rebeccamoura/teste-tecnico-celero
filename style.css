@@ -263,10 +263,6 @@ main div.receitas div.textos :is(p:first-child, h3) {
     margin-bottom: 12px;
 }
 
-main div.receitas div.textos div.dificuldade-prato p {
-    margin-bottom: 26px;
-}
-
 main div.receitas div.textos h3 {
     font-size: 1.6rem;
     font-family: 'Playfair Display', serif;
@@ -277,16 +273,20 @@ main div.receitas div.textos p {
     color: var(--lipstick-color);
 }
 
-main div.receitas div.textos p span img:first-child {
-    margin-left: 10.5px;
+main div.receitas div.textos div.estrelas-container {
+    display: flex;
 }
 
-main div.receitas div.textos p span img {
+main div.receitas div.textos div.estrelas-container p.diff {
+
+    margin: 0px 10.5px 26px 0px;
+
+    /*margin-right: 10.5px;*/
+}
+
+main div.receitas div.textos div.estrelas-container div.estrelas img {
+    width: 8px;
     opacity: .1;
-}
-
-main div.receitas div.textos p span :is(img:nth-child(1), img:nth-child(2)) {
-    opacity: 1;
 }
 
 main div.receitas div.textos div.mudar-prato {
