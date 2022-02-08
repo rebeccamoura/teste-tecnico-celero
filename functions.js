@@ -1,7 +1,53 @@
 const q = (element) => document.querySelector(element)
 const qAll = (element) => document.querySelectorAll(element)
+let contador = 0;
+const receitas = [
+    {
+        adicionado: 'Adicionado ontem',
+        nome: 'Sanduíche de tomate com salada de ovos',
+        dificuldade: 'Fácil',
+        estrelas: 2
+    },
+    {
+        adicionado: 'Adicionado há 2 dias',
+        nome: 'Iogurte de fruta crocante',
+        dificuldade: 'Difícil',
+        estrelas: 4
+    }
+]
 
-// ideia: Função pegar o key-event e usar ele para o nome do elemento que colocará o evento remove/add d-none
+
+function trocarReceita(event) {
+
+    if (event.target.classList.contains('next')) {
+
+        if (contador >= receitas.length - 1) {
+            contador = 0
+        } else {
+            contador++
+        }
+
+    } else {
+
+        if (contador <= 0) {
+            contador = receitas.length - 1
+        } else {
+            contador--
+        }
+    
+    }
+
+    console.log(contador)
+
+    mostrarReceita()
+
+}
+
+function mostrarReceita() {
+    q('div.receitas div.textos p.data-add').innerHTML = receitas[contador].adicionado
+    q('div.receitas div.textos h3.nome').innerHTML = receitas[contador].nome
+    q('div.receitas div.textos p.diff').innerHTML = receitas[contador].dificuldade
+}
 
 function removerDNone(event) {
 
@@ -90,7 +136,6 @@ function desativarIcone(event) {
             break
     }
 
-    // se tiver com a classe active, essa função não funciona
 
 }
 

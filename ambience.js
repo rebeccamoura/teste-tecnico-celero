@@ -29,3 +29,7 @@ qAll('div.option').forEach(div => div.addEventListener('click', ativarDiv))
 
 q('div.option img').setAttribute('src', 'assets/icone-cozinha-active.svg')
 
+qAll('div.seta-container').forEach(div => div.addEventListener('click', trocarReceita))
+
+mostrarReceita()
+
