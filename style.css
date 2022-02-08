@@ -419,6 +419,10 @@ footer div.footer h1 span {
     margin-right: 2.06rem;
 }
 
+footer div.footer div.header-footer p {
+    font-weight: normal;
+}
+
 
 footer div.footer div.redes-sociais img {
     width: 2rem;
@@ -608,8 +612,6 @@ header div.ceviche-expandido div.content {
     align-items: center;
 }
 
-header div.ceviche-expandido div.content img {}
-
 header div.ceviche-expandido div.content div.textos {
     width: 270px;
     height: 317px;
@@ -672,3 +674,9 @@ header div.ceviche-expandido div.content div.textos div.actions :is(div.ver-rece
     color: var(--lipstick-color);
     font-weight: bold;
 }
+
+p {
+    font-weight: bold;
+}
+
+
