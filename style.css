@@ -751,3 +751,56 @@ p {
         width: 277.1px;
     }
 }
+
+@media (max-width: 568px) {
+    header div.main-header {
+        flex-direction: column;
+        margin-left: 150px;
+    }
+
+    main div.mundo-gastronomico {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    main div.mundo-gastronomico div.options {
+        width: 300px;
+        margin: auto;
+    }
+
+    main div.mundo-gastronomico img {
+        width: 300px;
+        margin: 10px auto;
+    }
+
+    main div.receitas {
+        flex-direction: column;
+    }
+
+    header {
+        height: 100vh;
+    }
+}
+
+@media (max-width: 518px) {
+    footer img.footer-background {
+        margin-top: 80px;
+    }
+    footer div.footer {
+        top: 115px;
+    }
+    nav {
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 491px) {
+    nav {
+        width: 300px;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 427px) {
+    
+}
