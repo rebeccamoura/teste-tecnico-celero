@@ -38,11 +38,6 @@ header {
     padding-top: 24px;
 }
 
-.container {
-    width: 1000px;
-    margin: auto;
-}
-
 
 /* Nav - Header */
 
@@ -102,7 +97,6 @@ nav ul li:last-child {
 
 nav ul li div.input-container input {
     font-size: 1.4rem;
-    /*padding: 9px 22.6px 9.2px 20px;*/
     padding: 10px 22px;
     width: 400px;
     border-radius: 16.5px;
@@ -201,7 +195,6 @@ header div.main-header div.img-prato div.hover p {
 
 /* Main */
 
-main {}
 
 main h2 {
 
@@ -680,3 +673,81 @@ p {
 }
 
 
+
+/* Responsividade */
+
+@media (max-width: 1051px) {
+
+    nav {
+        width: 800px;
+    }
+
+}
+
+@media (max-width: 890px) {
+    nav {
+        width: 600px;
+    }
+
+    nav ul li div.input-container input {
+        width: 300px;
+    }
+
+    html {
+        font-size: 55%;
+    }
+
+    footer img.footer-background {
+        margin-top: 50px;
+    }
+
+    footer div.footer {
+        width: 600px;
+    }
+    
+}
+
+@media (max-width: 630px) {
+    nav {
+        width: 400px;
+    }
+
+    footer div.footer {
+        width: 400px;
+    }
+
+    nav ul li div.avatar-container {
+        width: 40px;
+        height: 40px;
+    }
+
+    nav ul li div.avatar-container p {
+        margin-right: 0px;
+    }
+    
+    nav ul li div.avatar-container img {
+        height: 20px;
+        
+    }
+
+    html {
+        font-size: 50%;
+    }
+
+    nav ul li a {
+        margin-left: -50px;
+        margin-right: 20px;
+    }
+
+    nav ul li div.input-container input {
+        width: 200px;
+    }
+
+    header div.main-header div.img-prato img:first-child {
+        width: 200px;
+    }
+    
+    header div.main-header div.img-prato img:last-child {
+        width: 277.1px;
+    }
+}

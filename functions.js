@@ -39,8 +39,6 @@ function trocarReceita(event) {
     
     }
 
-    console.log(contador)
-
     mostrarReceita()
 
 }
@@ -51,6 +49,8 @@ function mostrarReceita() {
     q('div.receitas div.textos p.data-add').innerHTML = receitas[contador].adicionado
     q('div.receitas div.textos h3.nome').innerHTML = receitas[contador].nome
     q('div.receitas div.textos p.diff').innerHTML = receitas[contador].dificuldade
+
+    qAll('div.estrelas-container div.estrelas img').forEach(img => img.style.opacity = '.1')
 
     for (let i = 1; i <= receitas[contador].estrelas; i++) {
 
@@ -166,3 +166,32 @@ function ativarDiv(event) {
 
     ativarIcone(event)
 }
+
+
+
+// API
+
+const mostrarUser = async() => {
+    
+    const dadosJSON = await fetch('https://randomuser.me/api/')
+    const dados = await dadosJSON.json()
+
+    q('header div.main-header div.textos h1 span').innerHTML = `${dados.results[0].name.first} ${dados.results[0].name.last}`
+    q('div#sidebar div.profile div.nome p').innerHTML = `${dados.results[0].name.first} ${dados.results[0].name.last}`
+    q('div#sidebar div.profile div.email p').innerHTML = dados.results[0].email
+    q('div#sidebar div.profile div.telefone p').innerHTML = dados.results[0].phone
+
+    q('header nav ul li#perfil p').innerHTML = dados.results[0].name.first
+
+    switch(dados.results[0].gender) {
+        case 'male':
+            qAll('img[alt="Ícone avatar"]').forEach(img => img.setAttribute('src', 'assets/avatar_masculino.svg'))
+            break
+        case 'female':
+            qAll('img[alt="Ícone avatar"]').forEach(img => img.setAttribute('src', 'assets/avatar_feminino.svg'))
+            break
+    }
+
+}
+
+mostrarUser()
