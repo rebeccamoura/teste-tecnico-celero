@@ -19,8 +19,6 @@ qAll('footer div.redes-sociais img').forEach(imagem => imagem.addEventListener('
 
 qAll('footer div.redes-sociais img').forEach(imagem => imagem.addEventListener('mouseout', desativarIcone))
 
-// separa
-
 qAll('div.option').forEach(div => div.addEventListener('mouseover', ativarIcone))
 
 qAll('main div.mundo-gastronomico div.options div.option').forEach(div => div.addEventListener('mouseout', desativarIcone))
